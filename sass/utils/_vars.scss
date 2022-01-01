@@ -1,0 +1,25 @@
+/* цвет лого #2196F3 */
+/* цвет навигации и заголовков #212121 */
+/* цвет номера телефона и основного текста #757575 */
+/* цвет изменеия навигации #2196F3 */
+/* цвет адресса #FFFFFF */
+/* цвет синего фона в кнопке #2196F3 */
+/* цвет имейла rgba(255, 255, 255, 0.6) */
+/* цвет номера телефона в футере rgba(255, 255, 255, 0.6) */
+/* цвет фона НАША КОМАНДА  #F5F4FA */
+/* #E5E5E5 */
+:root {
+  --primary-bcg: #ffffff;
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-text-color: #2196f3;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
+  --footer-hero-bcg: #2f303a;
+  --logo: #000000;
+  --text-secondary: #ffffff;
+  --buttons-text: #212121;
+  --buttons-bcg: #f5f4fa;
+  --team-bcg: #f5f4fa;
+  --buttons-hover-text: #ffffff;
+  --buttons-hover-bcg: #2196f3;
+}

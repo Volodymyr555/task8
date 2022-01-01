@@ -1,0 +1,37 @@
+/* our works - Чем мы занимаемся - Наши работы*/
+.our-works-title {
+  @include font(700, 36px, 1.31);
+  text-align: center;
+  color: var(--title-text-color);
+  margin-bottom: 50px;
+}
+
+.our-works-list {
+  display: flex;
+  margin-bottom: 94px;
+}
+
+.our-works-item {
+  position: relative;
+}
+
+.our-works-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.our-works-box {
+  padding-top: 22px;
+  padding-bottom: 22px;
+  background: rgba(47, 48, 58, 0.8);
+  position: absolute;
+  width: 100%;
+  bottom: 0%;
+}
+
+.our-works-description {
+  font-family: Roboto;
+  @include font(700, 14px, 1.14);
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}

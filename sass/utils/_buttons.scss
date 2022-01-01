@@ -1,0 +1,16 @@
+.button {
+  font-family: inherit;
+  letter-spacing: 0.06em;
+  @include font(500, 16px, 1.87);
+  color: var(--buttons-hover-text);
+  background-color: var(--buttons-hover-bcg);
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-height: 50px;
+  min-width: 200px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
