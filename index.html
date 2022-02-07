@@ -14,23 +14,29 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
+
 <!-- Section Header-Навигация -->
-<!-- <header class="header">
+
+<header class="header">
     <div class="container header-container">
         <nav class="navigation">
-            <a href="" class="link logo" ><span class="logo-web">Web</span><span class="logo-studio" >Studio</span> </a> -->
+            <a href="" class="link logo"><span class="logo-web">Web</span><span class="logo-studio">Studio</span> </a>
+            
             <!-- Студия-Портфолио-Контакты -->
-            <!-- <ul class="site-nav list">
-                <li class="header-item"> 
+            
+            <ul class="site-nav list">
+                <li class="site-nav-item"> 
                     <a href="" class="site-nav-link link current"> Студия </a> </li>
-                <li class="header-item"> 
+                <li class="site-nav-item"> 
                     <a href="./portfolio.html" class="site-nav-link link"> Портфолио </a> </li>
-                <li class="header-item"> 
+                <li class="site-nav-item"> 
                     <a href="" class="site-nav-link link"> Контакты </a> </li>
             </ul>
-        </nav> -->
+        </nav>
+
         <!-- Контакты -->
-        <!-- <ul class="contacts list">
+        
+        <ul class="header-contacts list">
             <li class="contacts-item">
                 <a href="" class="contacts-link link">  
                     <svg class="contacts-icon" 
@@ -55,8 +61,42 @@
                     +38 096 111 11 11 </a> 
             </li>
         </ul>
+        <button class="mobmenu-btn-open"  type="button">
+            <svg class="mobmenu-btn-icon" width="24" height="16">
+                <use href="./image/icons.svg#mob-menu-btn">
+                </use>
+            </svg>
+        </button>
     </div>
-</header>    -->
+        
+    <div class="mobmenu">
+        <button type="button" class="mobmenu-btn-close">X
+        </button>
+    
+        <ul class="mob-site-nav list">
+            <li class="mob-site-nav-item">
+                <a href="" class="mob-site-nav-link link current"> Студия </a>
+            </li>
+            <li class="mob-site-nav-item">
+                <a href="./portfolio.html" class="mob-site-nav-link link"> Портфолио </a>
+            </li>
+            <li class="mob-site-nav-item">
+                <a href="" class="mob-site-nav-link link"> Контакты </a>
+            </li>
+        </ul>
+        <div class="mobmenu-footer-box">
+            <a class="mobmenu-tel"> +38 096 111 11 11</a>
+            <a class="mobmenu-mail"> info@devstudio.com</a>
+            <ul class="mobmenu-footer-list list">
+                <li class="mobmenu-footer-item">Instagram</li>
+                <li class="mobmenu-footer-item">Twitter</li>
+                <li class="mobmenu-footer-item">Facebook</li>
+                <li class="mobmenu-footer-item">Linkedln</li>
+            </ul>
+                <div class="mobmenu-item-after"></div>
+        </div>
+    </div>
+</header>   
 <main>
 
     <!-- Section HERO -->
@@ -70,129 +110,70 @@
 <section class="benefits section">
     <div class="container">
         <h2 class="benefits-title title"> Иконки </h2>
-        <ul class="benefits-list-icons list">
-            <li class="benefits-item-icons">
-                <svg class="benefits-icon" 
-                width="70" 
-                height="70">
-                    <use href="./image/icons.svg#icon-antenna">
-                    </use>
-                </svg>
-                <h3 class="benefits-list-title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
-                <p class="benefirs-list-title-description">Идейные соображения, а также начало повседневной работы по формированию позиции.
-                </p>
-            </li>
-            <li class="benefits-item-icons">
-                <svg class="benefits-icon" width="70" height="70">
-                    <use href="./image/icons.svg#icon-clock">
-                    </use>
-                </svg>
-            </li>
-            <li class="benefits-item-icons">
-                <svg class="benefits-icon" width="70" height="70">
-                    <use href="./image/icons.svg#icon-diagram">
-                    </use>
-                </svg>
-            </li>
-            <li class="benefits-item-icons">
-                <svg class="benefits-icon" width="70" height="70">
-                    <use href="./image/icons.svg#icon-astronaut">
-                    </use>
-                </svg>
-            </li>
-        </ul>
-    </div>
-    <div class="container">
-        <h2 class="benefits-title title">Сильные стороны</h2>
         <ul class="benefits-list list">
-                <li class="benefits-item">
-                    
-                </li>
-                <li class="benefits-item">
+            <li class="benefits-item">
+                <div class="benefits-container-icon">
+                    <svg class="benefits-icon" 
+                    width="70" 
+                    height="70">
+                        <use href="./image/icons.svg#icon-antenna">
+                        </use>
+                    </svg>
+                </div>
+                <div class="benefits-container-text">
+                    <h3 class="benefits-list-title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
+                    <p class="benefits-list-description">Идейные соображения, а также начало повседневной работы по формированию позиции.
+                    </p>
+                </div>
+            </li>
+            <li class="benefits-item">
+                <div class="benefits-container-icon">
+                    <svg class="benefits-icon" width="70" height="70">
+                        <use href="./image/icons.svg#icon-clock">
+                        </use>
+                    </svg>
+                </div>
+                <div class="benefits-container-text">
                     <h3 class="benefits-list-title">ПУНКТУАЛЬНОСТЬ</h3>
-                    <p class="benefirs-list-title-description">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-                </li>
-                <li class="benefits-item">
+                    <p class="benefits-list-description">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+                    </p>
+                </div>
+            </li>
+            <li class="benefits-item">
+                <div class="benefits-container-icon">
+                    <svg class="benefits-icon" width="70" height="70">
+                        <use href="./image/icons.svg#icon-diagram">
+                        </use>
+                    </svg>
+                </div>
+                <div class="benefits-container-text">
                     <h3 class="benefits-list-title">ПЛАНИРОВАНИЕ</h3>
-                    <p class="benefirs-list-title-description">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-                </li>
-                <li class="benefits-item">
+                    <p class="benefits-list-description">Равным образом консультация с широким активом в значительной степени
+                        обуславливает.
+                    </p>
+                </div>
+            </li>
+            <li class="benefits-item">
+                <div class="benefits-container-icon">
+                    <svg class="benefits-icon" width="70" height="70">
+                        <use href="./image/icons.svg#icon-astronaut">
+                        </use>
+                    </svg>
+                </div>
+                <div class="benefits-container-text">
                     <h3 class="benefits-list-title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
-                    <p class="benefirs-list-title-description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-                </li>
+                    <p class="benefits-list-description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+                    </p>
+                </div>
+            </li>
         </ul>
     </div>
 </section>
 
 
 
-
-
-<!-- Copy of benefits -->
-<!-- <section class="benefits section">
-    <div class="container">
-        <h2 class="benefits-title title"> Иконки </h2>
-        <ul class="benefits-list-icons list">
-            <li class="benefits-item-icons">
-                <svg class="benefits-icon" width="70" height="70">
-                    <use href="./image/icons.svg#icon-antenna">
-                    </use>
-                </svg>
-            </li>
-            <li class="benefits-item-icons">
-                <svg class="benefits-icon" width="70" height="70">
-                    <use href="./image/icons.svg#icon-clock">
-                    </use>
-                </svg>
-            </li>
-            <li class="benefits-item-icons">
-                <svg class="benefits-icon" width="70" height="70">
-                    <use href="./image/icons.svg#icon-diagram">
-                    </use>
-                </svg>
-            </li>
-            <li class="benefits-item-icons">
-                <svg class="benefits-icon" width="70" height="70">
-                    <use href="./image/icons.svg#icon-astronaut">
-                    </use>
-                </svg>
-            </li>
-        </ul>
-    </div>
-    <div class="container">
-        <h2 class="benefits-title title">Сильные стороны</h2>
-        <ul class="benefits-list list">
-            <li class="benefits-item">
-                <h3 class="benefits-list-title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
-                <p class="benefirs-list-title-description">Идейные соображения, а также начало повседневной работы по
-                    формированию позиции.</p>
-            </li>
-            <li class="benefits-item">
-                <h3 class="benefits-list-title">ПУНКТУАЛЬНОСТЬ</h3>
-                <p class="benefirs-list-title-description">Задача организации, в особенности же рамки и место обучения
-                    кадров влечет за собой.</p>
-            </li>
-            <li class="benefits-item">
-                <h3 class="benefits-list-title">ПЛАНИРОВАНИЕ</h3>
-                <p class="benefirs-list-title-description">Равным образом консультация с широким активом в значительной
-                    степени обуславливает.</p>
-            </li>
-            <li class="benefits-item">
-                <h3 class="benefits-list-title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
-                <p class="benefirs-list-title-description">Значимость этих проблем настолько очевидна, что реализация
-                    плановых заданий.</p>
-            </li>
-        </ul>
-    </div>
-</section> -->
-
-
-
-
-
-
 <!-- Section Чем мы занимаемся - Наши работы -->
-<!-- <section class="our-works section">
+<section class="our-works section">
     <div class="container">  
         <h2 class="our-works-title title">Чем мы занимаемся</h2>
         <ul class="our-works-list list">
@@ -219,14 +200,14 @@
             </li>
             </ul>
     </div>
-</section> -->
+</section>
 
 <!-- Section Наша команда - Карточки-сотрудники -->
-<!-- <section class="team section">
+<section class="team section">
     <div class="container">
     <h2 class="team-title title"> Наша команда</h2>
     <ul class="team-list list">
-        <li class="team-item"><img src="./image/ihor.jpg" width="270" height="260" alt="Игорь Демьяненко">
+        <li class="team-item"><img src="./image/ihor.jpg" alt="Игорь Демьяненко">
             <div class="team-list-bottom">
                 <h3 class="team-list-name ">Игорь Демьяненко</h3>
                 <p class="team-list-name-descriptions">Product Designer</p>
@@ -278,10 +259,11 @@
                 </ul>
             </div>
         </li>
-        <li class="team-item"><img src="./image/olga.jpg" width="270" height="260" alt="Ольга Репина">
+        <li class="team-item">
+            <img src="./image/olga.jpg" alt="Ольга Репина">
             <div class="team-list-bottom">
-                <h3 class="team-list-name title">Frontend Developer</h3>
-                <p class="team-list-name-descriptions">Product Designer</p>
+                <h3 class="team-list-name title">Ольга Репина</h3>
+                <p class="team-list-name-descriptions">Frontend Developer</p>
                 <ul class="team-social-list list">
                     <li class="team-social-item item">
                         <a href="" class="team-social-link">
@@ -318,9 +300,10 @@
                 </ul>
             </div>
         </li>
-        <li class="team-item"><img src="./image/nikolay.jpg" width="270" height="260" alt="Николай Тарасов">
+        <li class="team-item">
+            <img src="./image/nikolay.jpg" alt="Николай Тарасов">
             <div class="team-list-bottom">
-                <h3 class="team-list-name">Игорь Демьяненко</h3>
+                <h3 class="team-list-name">Николай Тарасов</h3>
                 <p class="team-list-name-descriptions">Marketing</p>
                 <ul class="team-social-list list">
                     <li class="team-social-item item">
@@ -358,9 +341,9 @@
                 </ul>
             </div>
             </li>
-        <li class="team-item"><img src="./image/mihail.jpg" width="270" height="260" alt="Михаил Ермаков">
+        <li class="team-item"><img src="./image/mihail.jpg" alt="Михаил Ермаков">
             <div class="team-list-bottom">
-                <h3 class="team-list-name">Игорь Демьяненко</h3>
+                <h3 class="team-list-name">Михаил Ермаков</h3>
                 <p class="team-list-name-descriptions">UI Designer</p>
                 <ul class="team-social-list list">
                     <li class="team-social-item item">
@@ -400,10 +383,10 @@
         </li>
     </ul>
     </div>
-</section> -->
+</section>
 
 <!-- Постоянные клиенты -->
-<!-- <section class="customers">
+<section class="customers">
     <div class="container">
         <h2 class="customers-title title"> Постоянные клиенты
         </h2>
@@ -461,12 +444,12 @@
             </li>
         </ul>
     </div>
-</section> -->
+</section>
 </main>
 
 
 <!-- Подвал footer -->
-<!-- <footer class="footer section">
+<footer class="footer section">
     <div class="container container-footer">
         <div class="adress-box"> 
             <a href="" class="link logo-footer"><span class="logo-web">Web</span><span class="logo-studio">Studio</span> </a>
@@ -482,7 +465,15 @@
         </p>
         <ul class="footer-social-list list">
             <li class="footer-social-item">
-                <a f="" class="footer-social-link">
+                <a href="" class="footer-social-link">
+                    <svg class="footer-social-icon" height="20" width="20">
+                        <use href="./image/icons.svg#icon-instagram">
+                        </use>
+                    </svg>
+                </a>
+            </li>
+            <li class="footer-social-item">
+                <a href="" class="footer-social-link">
                     <svg class="footer-social-icon" height="20" width="20">
                         <use href="./image/icons.svg#icon-twitter">
                         </use>
@@ -512,7 +503,7 @@
     </p>
     <form class="footer-signin-form">
     <input type="email" placeholder="E-mail" class="footer-signin-email">
-        <button type="button" class="footer-signin-button">Подписаться
+        <button type="button" class="footer-signin-button button">Подписаться
             <svg class="footer-signin-button-icon" height="24" width="24">
                 <use href="./image/icons.svg#icon-send">
                 </use>
@@ -521,19 +512,10 @@
     </div>
     </form>
 </div>
-</footer>href="" class="footer-social-link">
-                    <svg class="footer-social-icon"
-                        height="20" 
-                        width="20"
-                        >
-                        <use href="./image/icons.svg#icon-instagram">
-                        </use>
-                    </svg>
-                </a>
-            </li> -->
+</footer>   
 
 <!-- modal window -->
-<!-- <div class="backdrop is-hidden" data-modal>
+<div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <button type="button" class="modal-button-close" data-modal-close>
             <svg class="modal-close-icon" width="18" height="18">
@@ -591,6 +573,7 @@
         </form>
     </div>
 </div>
-<script src="./js/modal.js"></script> -->
+<script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
 </body>
 </html>

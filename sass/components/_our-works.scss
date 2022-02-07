@@ -1,4 +1,10 @@
 /* our works - Чем мы занимаемся - Наши работы*/
+.our-works {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
 .our-works-title {
   @include font(700, 36px, 1.31);
   text-align: center;
