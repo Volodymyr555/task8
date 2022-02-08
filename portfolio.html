@@ -17,45 +17,84 @@
 
 <body>
     <!-- Section Heder-Навигация -->
-    <header class="header">
-        <div class="container header-container">
-            <nav class="navigation">
-                <a href="" class="link logo"><span class="logo-web">Web</span><span class="logo-studio">Studio</span> </a>
-                <!-- Студия-Портфолио-Контакты -->
-                <ul class="site-nav list">
-                    <li class="header-item">
-                        <a href="./index.html" class="site-nav-link link"> Студия </a>
-                    </li>
-                    <li class="header-item">
-                        <a href="" class="site-nav-link link current"> Портфолио </a>
-                    </li>
-                    <li class="header-item">
-                        <a href="" class="site-nav-link link"> Контакты </a>
-                    </li>
-                </ul>
-            </nav>
-            <!-- Контакты -->
-            <ul class="contacts list">
-                <li class="contacts-item">
-                    <a href="" class="contacts-link link">
-                        <svg class="contacts-icon" width="16" height="12">
-                            <use href="./image/icons.svg#icon-mailbox">
-                            </use>
-                        </svg>
-                        info@devstudio.com
-                    </a>
+<header class="header">
+    <div class="container header-container">
+        <nav class="navigation">
+            <a href="" class="link logo"><span class="logo-web">Web</span><span class="logo-studio">Studio</span> </a>
+
+            <!-- Студия-Портфолио-Контакты -->
+
+            <ul class="site-nav list">
+                <li class="site-nav-item">
+                    <a href="./index.html" class="site-nav-link link"> Студия </a>
                 </li>
-                <li class="contacts-item">
-                    <a href="" class="contacts-link link">
-                        <svg class="contacts-icon" width="10" height="16">
-                            <use href="./image/icons.svg#icon-phone">
-                            </use>
-                        </svg>
-                        +38 096 111 11 11 </a>
+                <li class="site-nav-item">
+                    <a href="./portfolio.html" class="site-nav-link link current"> Портфолио </a>
+                </li>
+                <li class="site-nav-item">
+                    <a href="" class="site-nav-link link"> Контакты </a>
                 </li>
             </ul>
-            </div>
-            </header>
+        </nav>
+
+        <!-- Контакты -->
+
+        <ul class="header-contacts list">
+            <li class="contacts-item">
+                <a href="" class="contacts-link link">
+                    <svg class="contacts-icon" width="16" height="12">
+                        <use href="./image/icons.svg#icon-mailbox">
+                        </use>
+                    </svg>
+                    info@devstudio.com
+                </a>
+            </li>
+            <li class="contacts-item">
+                <a href="" class="contacts-link link">
+                    <svg class="contacts-icon" width="10" height="16">
+                        <use href="./image/icons.svg#icon-phone">
+                        </use>
+                    </svg>
+                    +38 096 111 11 11 </a>
+            </li>
+        </ul>
+        <button class="mobmenu-btn-open" type="button">
+            <svg class="mobmenu-btn-icon" width="24" height="16">
+                <use href="./image/icons.svg#mob-menu-btn">
+                </use>
+            </svg>
+        </button>
+    </div>
+
+    <div class="mobmenu">
+        <button type="button" class="mobmenu-btn-close">X
+        </button>
+
+        <ul class="mob-site-nav list">
+            <li class="mob-site-nav-item">
+                <a href="" class="mob-site-nav-link link current"> Студия </a>
+            </li>
+            <li class="mob-site-nav-item">
+                <a href="./portfolio.html" class="mob-site-nav-link link"> Портфолио </a>
+            </li>
+            <li class="mob-site-nav-item">
+                <a href="" class="mob-site-nav-link link"> Контакты </a>
+            </li>
+        </ul>
+        <div class="mobmenu-footer-box">
+            <a class="mobmenu-tel"> +38 096 111 11 11</a>
+            <a class="mobmenu-mail"> info@devstudio.com</a>
+            <ul class="mobmenu-footer-list list">
+                <li class="mobmenu-footer-item">Instagram</li>
+                <li class="mobmenu-footer-item">Twitter</li>
+                <li class="mobmenu-footer-item">Facebook</li>
+                <li class="mobmenu-footer-item">Linkedln</li>
+            </ul>
+            <div class="mobmenu-item-after"></div>
+        </div>
+    </div>
+</header>
+
     <main>
 <section class="progress">
     <h1 class="progress-title title" >Наши достижения</h1>
@@ -82,8 +121,24 @@
         <li class="progress-card-item">
             <a href=""  class="link">
                 <div class="progress-card-top-box">
-                    <img src="./image/tecnokryak-min.jpg"  height="294" alt="сайт технокряк">
-                    <p class="progress-cards-top-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+                    <picture>
+                        <source 
+                            srcset="./image/tecnokryak-min.jpg 1x,
+                                    ./image/tecnokryak-2x-min.jpg 2x"
+                            media="(min-width: 1200px)"
+                        />
+                        <source srcset="./image/tecnokryak-1x-tab-min.jpg 1x,
+                                        ./image/tecnokryak-2x-tab-min.jpg 2x" 
+                            media="(min-width: 768px)" 
+                        />
+                            <source srcset="./image/tecnokryak-1x-mob-min.jpg 1x,
+                                            ./image/tecnokryak-2x-mob-min.jpg 2x" 
+                            media="(min-width: 320px)" 
+                        />
+                        <img 
+                            src="./image/tecnokryak-min.jpg"  height="294" alt="сайт технокряк"/>
+                    </picture>
+                        <p class="progress-cards-top-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                         шпионажа и атак на защищённые сервера конкурентов. 
                     </p>
                 </div>
@@ -96,7 +151,19 @@
         <li class="progress-card-item">
             <a href="" class="link">
                 <div class="progress-card-top-box">
-                    <img src="./image/poster-min.jpg"  height="294" alt="постер с баскетболистами">
+                    <picture>
+                        <source srcset="./image/poster-min.jpg 1x,
+                                        ./image/poster-2x-min.jpg 2x" 
+                                        media="(min-width: 1200px)" />
+                        <source srcset="./image/poster-1x-tab-min.jpg 1x,
+                                        ./image/poster-2x-tab-min.jpg 2x" 
+                                        media="(min-width: 768px)" />
+                        <source srcset="./image/poster-1x-mob-min.jpg 1x,
+                                        ./image/poster-2x-mob-min.jpg 2x" 
+                                        media="(min-width: 320px)" />
+                        <img 
+                        src="./image/poster-min.jpg"  height="294" alt="постер с баскетболистами">
+                    </picture>
                     <p class="progress-cards-top-text">Технокряк это современная площадка распространения коронавируса. Компании использую эту платформу для цифрового
                         шпионажа и атак на защищённые сервера конкурентов.
                     </p>
@@ -110,8 +177,20 @@
         <li class="progress-card-item">
             <a href="" class="link">
                 <div class="progress-card-top-box">
-                    <img src="./image/see-food-min.jpg"  height="294" alt="вывеска ресторана">
-                    <p class="progress-cards-top-text">Технокряк это современная площадка распространения коронавируса. Компании использую эту платформу для цифрового
+                    <picture>
+                        <source srcset="./image/see-food-min.jpg 1x,
+                                        ./image/see-food-2x-min.jpg 2x" 
+                                        media="(min-width: 1200px)" />
+                        <source srcset="./image/see-food-1x-tab-min.jpg 1x,
+                                        ./image/see-food-2x-tab-min.jpg 2x" 
+                                        media="(min-width: 768px)" />
+                        <source srcset="./image/see-food-1x-mob-min.jpg 1x,
+                                        ./image/see-food-2x-mob-min.jpg 2x" 
+                                        media="(min-width: 320px)" />
+                    <img 
+                        src="./image/see-food-min.jpg"  height="294" alt="вывеска ресторана">
+                    </picture>
+                        <p class="progress-cards-top-text">Технокряк это современная площадка распространения коронавируса. Компании использую эту платформу для цифрового
                         шпионажа и атак на защищённые сервера конкурентов.
                     </p>
                 </div>
@@ -124,7 +203,19 @@
         <li class="progress-card-item">
             <a href="" class="link">
                 <div class="progress-card-top-box">
-                    <img src="./image/project-prime-min.jpg"  height="294" alt="наушники">
+                    <picture>
+                        <source srcset="./image/project-prime-min.jpg 1x,
+                                        ./image/project-prime-2x-min.jpg 2x" 
+                                        media="(min-width: 1200px)" />
+                        <source srcset="./image/project-prime-1x-tab-min.jpg 1x,
+                                        ./image/project-prime-2x-tab-min.jpg 2x" 
+                                        media="(min-width: 768px)" />
+                        <source srcset="./image/project-prime-1x-mob-min.jpg 1x,
+                                        ./image/project-prime-2x-mob-min.jpg 2x" 
+                                        media="(min-width: 320px)" />
+                        <img 
+                        src="./image/project-prime-min.jpg"  height="294" alt="наушники">
+                    </picture>
                     <p class="progress-cards-top-text">Технокряк это современная площадка распространения коронавируса. Компании использую эту платформу для цифрового
                         шпионажа и атак на защищённые сервера конкурентов.
                     </p>
@@ -138,7 +229,19 @@
         <li class="progress-card-item">
             <a href="" class="link">
                 <div class="progress-card-top-box">
-                    <img src="./image/project-boxes-min.jpg"  height="294" alt="коробки">
+                    <picture>
+                        <source srcset="./image/project-boxes-min.jpg 1x,
+                                        ./image/project-boxes-2x-min.jpg 2x" 
+                                        media="(min-width: 1200px)" />
+                        <source srcset="./image/project-boxes-1x-tab-min.jpg 1x,
+                                        ./image/project-boxes-2x-tab-min.jpg 2x" 
+                                        media="(min-width: 768px)" />
+                        <source srcset="./image/project-boxes-1x-mob-min.jpg 1x,
+                                        ./image/project-boxes-2x-mob-min.jpg 2x" 
+                                        media="(min-width: 320px)" />
+                        <img 
+                        src="./image/project-boxes-min.jpg"  height="294" alt="коробки">
+                    </picture>
                     <p class="progress-cards-top-text">Технокряк это современная площадка распространения коронавируса. Компании использую эту платформу для цифрового
                         шпионажа и атак на защищённые сервера конкурентов.
                     </p>
@@ -152,7 +255,19 @@
         <li class="progress-card-item">
             <a href="" class="link">
                 <div class="progress-card-top-box">
-                    <img src="./image/inspiration-min.jpg"  height="294" alt="сайт">
+                    <picture>
+                        <source srcset="./image/inspiration-min.jpg 1x,
+                                        ./image/inspiration-2x-min.jpg 2x" 
+                                        media="(min-width: 1200px)" />
+                        <source srcset="./image/inspiration-1x-tab-min.jpg 1x,
+                                        ./image/inspiration-2x-tab-min.jpg 2x" 
+                                        media="(min-width: 768px)" />
+                        <source srcset="./image/inspiration-1x-mob-min.jpg 1x,
+                                        ./image/inspiration-2x-mob-min.jpg 2x" 
+                                        media="(min-width: 320px)" />
+                        <img 
+                        src="./image/inspiration-min.jpg"  height="294" alt="сайт">
+                    </picture>
                     <p class="progress-cards-top-text">Технокряк это современная площадка распространения коронавируса. Компании использую эту платформу для цифрового
                         шпионажа и атак на защищённые сервера конкурентов.
                     </p>
@@ -166,7 +281,19 @@
         <li class="progress-card-item">
             <a href="" class="link">
                 <div class="progress-card-top-box">
-                    <img src="./image/limited-edition-min.jpg"  height="294" alt="развёрнутый журнал">
+                    <picture>
+                        <source srcset="./image/limited-edition-min.jpg 1x,
+                                        ./image/limited-edition-2x-min.jpg 2x" 
+                                        media="(min-width: 1200px)" />
+                        <source srcset="./image/limited-edition-1x-tab-min.jpg 1x,
+                                        ./image/limited-edition-2x-tab-min.jpg 2x" 
+                                        media="(min-width: 768px)" />
+                        <source srcset="./image/limited-edition-1x-mob-min.jpg 1x,
+                                        ./image/limited-edition-2x-mob-min.jpg 2x" 
+                                        media="(min-width: 320px)" />
+                        <img 
+                        src="./image/limited-edition-min.jpg"  height="294" alt="развёрнутый журнал">
+                    </picture>
                     <p class="progress-cards-top-text">Технокряк это современная площадка распространения коронавируса. Компании использую эту платформу для цифрового
                         шпионажа и атак на защищённые сервера конкурентов.
                     </p>
@@ -180,7 +307,19 @@
         <li class="progress-card-item">
             <a href="" class="link">
                 <div class="progress-card-top-box">
-                    <img src="./image/project-label-min.jpg"  height="294" alt="лэйба с надписью">
+                    <picture>
+                        <source srcset="./image/project-label-min.jpg 1x,
+                                        ./image/project-label-2x-min.jpg 2x" 
+                                        media="(min-width: 1200px)" />
+                        <source srcset="./image/project-label-1x-tab-min.jpg 1x,
+                                        ./image/project-label-2x-tab-min.jpg 2x" 
+                                        media="(min-width: 768px)" />
+                        <source srcset="./image/project-label-1x-mob-min.jpg 1x,
+                                        ./image/project-label-2x-mob-min.jpg 2x" 
+                                        media="(min-width: 320px)" />
+                        <img 
+                            src="./image/project-label-min.jpg"  height="294" alt="лэйба с надписью">
+                    </picture>  
                     <p class="progress-cards-top-text">Технокряк это современная площадка распространения коронавируса. Компании использую эту платформу для цифрового
                         шпионажа и атак на защищённые сервера конкурентов.
                     </p>
@@ -194,7 +333,19 @@
         <li class="progress-card-item">
             <a href="" class="link">
                 <div class="progress-card-top-box">
-                    <img src="./image/growing-business-min.jpg"  height="294" alt="ноут бук">
+                    <picture>
+                        <source srcset="./image/growing-business-min.jpg 1x,
+                                        ./image/growing-business-2x-min.jpg 2x" 
+                                        media="(min-width: 1200px)" />
+                        <source srcset="./image/growing-business-1x-tab-min.jpg 1x,
+                                        ./image/growing-business-2x-tab-min.jpg 2x" 
+                                        media="(min-width: 768px)" />
+                        <source srcset="./image/growing-business-1x-mob-min.jpg 1x,
+                                        ./image/growing-business-2x-mob-min.jpg 2x" 
+                                        media="(min-width: 320px)" />
+                        <img 
+                            src="./image/growing-business-min.jpg"  height="294" alt="ноут бук">
+                    </picture>
                     <p class="progress-cards-top-text">Технокряк это современная площадка распространения коронавируса. Компании использую эту платформу для цифрового
                         шпионажа и атак на защищённые сервера конкурентов.
                     </p>
